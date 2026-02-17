@@ -5,10 +5,10 @@ import HeroBanner from "@/components/HeroBanner";
 import { Building2, ExternalLink } from "lucide-react";
 
 const subsidiaries = [
-  { name: "Credence Construction", desc: "Full-service construction management and general contracting solutions for commercial, industrial, and infrastructure projects.", url: "#" },
-  { name: "Credence Energy", desc: "Energy sector project management, pipeline construction, and infrastructure development for oil, gas, and renewable energy clients.", url: "#" },
-  { name: "Credence Environmental", desc: "Environmental consulting, regulatory compliance, remediation services, and sustainability planning for public and private sectors.", url: "#" },
-  { name: "Credence Technology", desc: "Technology-driven solutions for project optimization, data analytics, BIM integration, and digital transformation in construction.", url: "#" },
+  { name: "Credence Design Build", desc: "Full-service design-build construction solutions for commercial, industrial, and infrastructure projects.", url: "https://credencedesignbuild.ca" },
+  { name: "Innovate & Flourish", desc: "Innovation-driven consulting, business growth strategies, and organizational development for forward-thinking companies.", url: "https://innovateandflourish.com" },
+  { name: "The Credence Group", desc: "Integrated project management, advisory services, and strategic consulting across multiple sectors.", url: "https://thecredencegroup.ca" },
+  { name: "Credence Media", desc: "Corporate media production, branding, digital marketing, and communications solutions for businesses.", url: "https://credencemedia.ca" },
 ];
 
 const Subsidiaries = () => {
