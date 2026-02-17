@@ -16,10 +16,10 @@ const services = [
 ];
 
 const subsidiaries = [
-  { name: "Credence Construction", desc: "Full-service construction management and general contracting solutions.", url: "#" },
-  { name: "Credence Energy", desc: "Energy sector project management and infrastructure development.", url: "#" },
-  { name: "Credence Environmental", desc: "Environmental consulting, compliance, and remediation services.", url: "#" },
-  { name: "Credence Technology", desc: "Technology-driven solutions for project optimization and data analytics.", url: "#" },
+  { name: "Credence Design Build", desc: "Full-service design-build construction solutions.", url: "https://credencedesignbuild.ca" },
+  { name: "Innovate & Flourish", desc: "Innovation-driven consulting and business growth strategies.", url: "https://innovateandflourish.com" },
+  { name: "The Credence Group", desc: "Integrated project management and advisory services.", url: "https://thecredencegroup.ca" },
+  { name: "Credence Media", desc: "Corporate media, branding, and digital marketing solutions.", url: "https://credencemedia.ca" },
 ];
 
 const Index = () => {
