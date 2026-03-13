@@ -3,37 +3,42 @@ import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import Layout from "@/components/Layout";
 import HeroBanner from "@/components/HeroBanner";
+import { useSiteContent } from "@/hooks/use-site-content";
 import {
   Briefcase, Building2, HardHat, ShieldCheck, ClipboardList, ExternalLink, ArrowRight,
 } from "lucide-react";
 
-const services = [
-  { icon: Briefcase, title: "Credence Consulting", desc: "Expert consulting services across industries, delivering strategic solutions for complex project challenges." },
-  { icon: ClipboardList, title: "Program Management", desc: "Comprehensive program management ensuring alignment with organizational goals and stakeholder expectations." },
-  { icon: Building2, title: "Project Development", desc: "From feasibility studies to detailed planning, we guide projects from concept to execution-ready status." },
-  { icon: HardHat, title: "Project Delivery", desc: "Multiple delivery models including Construction Management, Design-Build, and Engineer-Procure-Construct." },
-  { icon: ShieldCheck, title: "Safety & Environmental", desc: "Proactive safety management and environmental compliance integrated into every project phase." },
-];
-
-const subsidiaries = [
-  { name: "Credence Design Build", desc: "Full-service design-build construction solutions.", url: "https://credencedesignbuild.ca" },
-  { name: "Innovate & Flourish", desc: "Innovation-driven consulting and business growth strategies.", url: "https://innovateandflourish.com" },
-  { name: "The Credence Group", desc: "Integrated project management and advisory services.", url: "https://thecredencegroup.ca" },
-  { name: "Credence Media", desc: "Corporate media, branding, and digital marketing solutions.", url: "https://credencemedia.ca" },
-];
+const serviceIcons = [Briefcase, ClipboardList, Building2, HardHat, ShieldCheck];
 
 const Index = () => {
+  const { get, loading } = useSiteContent();
+
+  const services = [1, 2, 3, 4, 5].map((i) => ({
+    icon: serviceIcons[i - 1],
+    title: get(`service_${i}_title`),
+    desc: get(`service_${i}_desc`),
+  }));
+
+  const subsidiaries = [1, 2, 3, 4].map((i) => ({
+    name: get(`subsidiary_${i}_name`),
+    desc: get(`subsidiary_${i}_desc`),
+    url: get(`subsidiary_${i}_url`),
+  }));
+
+  const heroImageUrl = get("hero_image_url");
+
   return (
     <Layout>
       {/* Hero */}
       <HeroBanner
-        title="Credence Consulting Corporation"
-        subtitle="Project Management & Project Delivery Professionals"
+        title={get("hero_title")}
+        subtitle={get("hero_subtitle")}
         large
+        backgroundUrl={heroImageUrl || undefined}
       >
         <div className="mt-8 flex flex-col sm:flex-row gap-4 justify-center">
           <Button size="lg" asChild>
-            <Link to="/services">Our Services <ArrowRight className="ml-2 h-4 w-4" /></Link>
+            <Link to={get("hero_cta_url")}>{get("hero_cta_text")} <ArrowRight className="ml-2 h-4 w-4" /></Link>
           </Button>
           <Button size="lg" variant="outline" className="border-secondary-foreground/30 text-secondary-foreground hover:bg-secondary-foreground/10" asChild>
             <Link to="/contact">Contact Us</Link>
@@ -109,13 +114,13 @@ const Index = () => {
       <section className="bg-primary py-16">
         <div className="container mx-auto px-4 text-center">
           <h2 className="text-2xl md:text-3xl font-serif font-bold text-primary-foreground mb-4">
-            Our unique approach has helped our clients achieve Success!
+            {get("cta_heading")}
           </h2>
           <p className="text-primary-foreground/80 mb-6 max-w-lg mx-auto">
-            Partner with Credence for reliable, professional project management and delivery.
+            {get("cta_subtext")}
           </p>
           <Button size="lg" variant="secondary" asChild>
-            <Link to="/contact">Get Started Today</Link>
+            <Link to={get("cta_button_url")}>{get("cta_button_text")}</Link>
           </Button>
         </div>
       </section>
