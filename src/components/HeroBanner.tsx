@@ -5,13 +5,16 @@ interface HeroBannerProps {
   subtitle?: string;
   large?: boolean;
   children?: React.ReactNode;
+  backgroundUrl?: string;
 }
 
-const HeroBanner = ({ title, subtitle, large = false, children }: HeroBannerProps) => {
+const HeroBanner = ({ title, subtitle, large = false, children, backgroundUrl }: HeroBannerProps) => {
+  const bgImage = backgroundUrl || heroBg;
+
   return (
     <section
       className={`relative bg-secondary text-secondary-foreground ${large ? "py-32 md:py-44" : "py-20 md:py-28"}`}
-      style={{ backgroundImage: `url(${heroBg})`, backgroundSize: "cover", backgroundPosition: "center" }}
+      style={{ backgroundImage: `url(${bgImage})`, backgroundSize: "cover", backgroundPosition: "center" }}
     >
       <div className="absolute inset-0 bg-secondary/80" />
       <div className="relative container mx-auto px-4 text-center">
