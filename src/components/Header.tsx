@@ -1,15 +1,15 @@
 import { useState } from "react";
 import { Link, useLocation } from "react-router-dom";
-import { Phone, Mail, Menu, X } from "lucide-react";
+import { Mail, Menu, X } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
 const navLinks = [
   { label: "Home", to: "/" },
-  { label: "About Us", to: "/about" },
-  { label: "Services", to: "/services" },
-  { label: "Subsidiaries", to: "/subsidiaries" },
+  { label: "Our Companies", to: "/companies" },
+  { label: "Investment Philosophy", to: "/philosophy" },
+  { label: "Careers", to: "/careers" },
+  { label: "Contact", to: "/contact" },
   { label: "FAQ", to: "/faq" },
-  { label: "Contact Us", to: "/contact" },
 ];
 
 const Header = () => {
@@ -22,13 +22,11 @@ const Header = () => {
       <div className="bg-secondary text-secondary-foreground">
         <div className="container mx-auto flex items-center justify-between px-4 py-2 text-sm">
           <div className="flex items-center gap-6">
-            <a href="tel:+18325551234" className="flex items-center gap-1.5 hover:text-primary transition-colors">
-              <Phone className="h-3.5 w-3.5" /> (832) 555-1234
-            </a>
-            <a href="mailto:info@credenceconsultingcorp.com" className="hidden sm:flex items-center gap-1.5 hover:text-primary transition-colors">
-              <Mail className="h-3.5 w-3.5" /> info@credenceconsultingcorp.com
+            <a href="mailto:inquiries@credencegroup.com" className="flex items-center gap-1.5 hover:text-primary transition-colors">
+              <Mail className="h-3.5 w-3.5" /> inquiries@credencegroup.com
             </a>
           </div>
+          <span className="hidden sm:block text-secondary-foreground/60 text-xs">Calgary, AB</span>
         </div>
       </div>
 
@@ -38,8 +36,7 @@ const Header = () => {
           <Link to="/" className="flex items-center gap-2">
             <div className="h-10 w-10 rounded-md bg-primary flex items-center justify-center text-primary-foreground font-bold text-lg font-serif">C</div>
             <div>
-              <span className="text-lg font-bold font-serif text-foreground leading-tight block">Credence</span>
-              <span className="text-xs text-muted-foreground leading-tight block">Consulting Corporation</span>
+              <span className="text-lg font-bold font-serif text-foreground leading-tight block">The Credence Group</span>
             </div>
           </Link>
 
