@@ -1,49 +1,54 @@
 import Layout from "@/components/Layout";
 import HeroBanner from "@/components/HeroBanner";
-import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
+import {
+  Accordion,
+  AccordionContent,
+  AccordionItem,
+  AccordionTrigger,
+} from "@/components/ui/accordion";
 
 const faqs = [
   {
-    q: "What services does Credence Consulting Corporation offer?",
-    a: "We offer comprehensive project management and delivery services including program management, project development, project delivery (Construction Management, Design-Build, Design-Bid-Build, Engineer-Procure-Construct), and safety & environmental management.",
+    q: "What is The Credence Group?",
+    a: "The Credence Group is a diversified holding company with seven subsidiaries operating across real estate, finance, consulting, and media industries — all united by a commitment to integrity and excellence.",
   },
   {
-    q: "What industries do you serve?",
-    a: "We serve clients across the energy, infrastructure, commercial, and industrial sectors. Our multi-sector experience allows us to bring best practices from diverse industries to every engagement.",
+    q: "How are the subsidiaries connected?",
+    a: "Our subsidiaries operate under an 'Integrated Verticality' model. Capital flows into real estate, which is built by our construction arm, financed by our lending division, and marketed by our media company — creating a complete value chain.",
   },
   {
-    q: "Are your project managers certified?",
-    a: "Yes. Our project managers hold PMI (Project Management Institute) certifications, including PMP and PgMP credentials, ensuring the highest standard of professional project management on every engagement.",
+    q: "Where is The Credence Group headquartered?",
+    a: "The Credence Group is headquartered in Calgary, Alberta, Canada.",
   },
   {
-    q: "How do I get started with Credence?",
-    a: "Simply reach out through our Contact Us page or call us directly. We'll schedule an initial consultation to understand your project needs and develop a tailored approach.",
+    q: "How can I invest with Credence Capital?",
+    a: "For private equity and investment inquiries, please contact us at inquiries@credencegroup.com and our capital team will be in touch.",
   },
   {
-    q: "What is your project delivery approach?",
-    a: "We offer multiple delivery models tailored to your project's unique requirements. These include Construction Management, Design-Build, Design-Bid-Build, and Engineer-Procure-Construct, allowing flexibility based on your risk profile and goals.",
+    q: "Are you hiring?",
+    a: "Yes! We are always looking for talented professionals across all subsidiaries. Visit our Careers page or send your resume to careers@credencegroup.com.",
   },
   {
-    q: "How does the subsidiary structure work?",
-    a: "Credence Consulting Corporation operates as the parent company overseeing a family of subsidiary companies. Each subsidiary specializes in a complementary discipline, allowing us to provide end-to-end solutions for complex, multi-disciplinary projects.",
+    q: "How do I contact a specific subsidiary?",
+    a: "You can reach out via our Contact page or visit the individual subsidiary website from the Our Companies page. General inquiries can be sent to inquiries@credencegroup.com.",
   },
   {
-    q: "What makes Credence different from other consulting firms?",
-    a: "Our combination of PMI-certified professionals, multi-sector experience, integrated subsidiary structure, and unwavering commitment to safety and client success sets us apart in the industry.",
+    q: "What industries does The Credence Group operate in?",
+    a: "We operate across property acquisition, real estate brokerage, land development & construction, mortgage financing & private lending, private equity, business advisory & strategy, and marketing & content.",
   },
 ];
 
 const FAQ = () => {
   return (
     <Layout>
-      <HeroBanner title="Frequently Asked Questions" subtitle="Find answers to common questions about our services and approach." />
+      <HeroBanner title="Frequently Asked Questions" subtitle="Find answers to common questions about The Credence Group." />
 
       <section className="py-16 md:py-24">
         <div className="container mx-auto px-4 max-w-3xl">
-          <Accordion type="single" collapsible className="w-full">
+          <Accordion type="single" collapsible className="space-y-3">
             {faqs.map((faq, i) => (
-              <AccordionItem key={i} value={`faq-${i}`}>
-                <AccordionTrigger className="text-left font-serif text-base font-bold hover:no-underline text-foreground">
+              <AccordionItem key={i} value={`faq-${i}`} className="border border-border rounded-lg px-4">
+                <AccordionTrigger className="text-left font-serif font-bold text-foreground">
                   {faq.q}
                 </AccordionTrigger>
                 <AccordionContent className="text-muted-foreground leading-relaxed">
