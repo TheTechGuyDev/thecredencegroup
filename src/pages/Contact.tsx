@@ -45,7 +45,7 @@ const Contact = () => {
               <h2 className="text-2xl font-serif font-bold text-foreground mb-6">Get In Touch</h2>
               <div className="space-y-6 mb-8">
                 <div className="flex items-start gap-4">
-                  <div className="h-12 w-12 rounded-lg bg-primary/10 flex items-center justify-center shrink-0">
+                  <div className="h-12 w-12 rounded bg-primary/10 flex items-center justify-center shrink-0">
                     <Mail className="h-5 w-5 text-primary" />
                   </div>
                   <div>
@@ -54,7 +54,7 @@ const Contact = () => {
                   </div>
                 </div>
                 <div className="flex items-start gap-4">
-                  <div className="h-12 w-12 rounded-lg bg-primary/10 flex items-center justify-center shrink-0">
+                  <div className="h-12 w-12 rounded bg-primary/10 flex items-center justify-center shrink-0">
                     <MapPin className="h-5 w-5 text-primary" />
                   </div>
                   <div>
@@ -64,8 +64,8 @@ const Contact = () => {
                 </div>
               </div>
 
-              <div className="rounded-lg bg-muted border border-border h-64 flex items-center justify-center">
-                <p className="text-muted-foreground text-sm">Map Placeholder — Calgary, AB</p>
+              <div className="rounded bg-secondary border border-gold/10 h-64 flex items-center justify-center">
+                <p className="text-gold-light/50 text-sm">Map Placeholder — Calgary, AB</p>
               </div>
             </div>
           </div>

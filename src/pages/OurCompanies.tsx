@@ -70,10 +70,10 @@ const OurCompanies = () => {
       <section className="py-16 md:py-24">
         <div className="container mx-auto px-4 space-y-8">
           {companies.map((c, i) => (
-            <Card key={c.name} className="border-border overflow-hidden">
+            <Card key={c.name} className="border-border overflow-hidden hover:shadow-lg transition-shadow">
               <CardContent className="p-0">
                 <div className={`flex flex-col md:flex-row ${i % 2 !== 0 ? "md:flex-row-reverse" : ""}`}>
-                  <div className="md:w-1/4 bg-primary/5 flex items-center justify-center p-8">
+                  <div className="md:w-1/4 bg-secondary flex items-center justify-center p-8">
                     <c.icon className="h-16 w-16 text-primary" />
                   </div>
                   <div className="md:w-3/4 p-6 md:p-8">
@@ -99,10 +99,10 @@ const OurCompanies = () => {
       </section>
 
       {/* The Credence Advantage */}
-      <section className="py-16 md:py-24 bg-muted">
+      <section className="py-16 md:py-24 bg-secondary">
         <div className="container mx-auto px-4">
           <div className="text-center mb-12">
-            <h2 className="text-3xl md:text-4xl font-serif font-bold text-foreground mb-3">The Credence Advantage</h2>
+            <h2 className="text-3xl md:text-4xl font-serif font-bold text-white mb-3">The Credence Advantage</h2>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-4xl mx-auto">
             {[
@@ -111,11 +111,11 @@ const OurCompanies = () => {
               { icon: Zap, title: "Operational Efficiency", desc: "Shared resources and streamlined processes that reduce cost and accelerate delivery." },
             ].map((item) => (
               <div key={item.title} className="text-center">
-                <div className="h-14 w-14 rounded-full bg-primary/10 flex items-center justify-center mx-auto mb-4">
+                <div className="h-14 w-14 rounded-full bg-primary/15 flex items-center justify-center mx-auto mb-4">
                   <item.icon className="h-7 w-7 text-primary" />
                 </div>
-                <h3 className="font-serif font-bold text-lg mb-2 text-foreground">{item.title}</h3>
-                <p className="text-sm text-muted-foreground leading-relaxed">{item.desc}</p>
+                <h3 className="font-serif font-bold text-lg mb-2 text-white">{item.title}</h3>
+                <p className="text-sm text-gold-light/60 leading-relaxed">{item.desc}</p>
               </div>
             ))}
           </div>

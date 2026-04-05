@@ -1,4 +1,3 @@
-import { Link } from "react-router-dom";
 import Layout from "@/components/Layout";
 import HeroBanner from "@/components/HeroBanner";
 import { Card, CardContent } from "@/components/ui/card";
@@ -36,7 +35,7 @@ const Careers = () => {
           </div>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-4xl mx-auto">
             {whyCredence.map((item) => (
-              <Card key={item.title} className="border-border text-center">
+              <Card key={item.title} className="border-border text-center hover:shadow-lg transition-shadow">
                 <CardContent className="p-6">
                   <div className="h-14 w-14 rounded-full bg-primary/10 flex items-center justify-center mx-auto mb-4">
                     <item.icon className="h-7 w-7 text-primary" />
@@ -51,13 +50,13 @@ const Careers = () => {
       </section>
 
       {/* Our Culture */}
-      <section className="py-16 md:py-24 bg-muted">
+      <section className="py-16 md:py-24 bg-secondary">
         <div className="container mx-auto px-4 max-w-3xl text-center">
-          <h2 className="text-3xl md:text-4xl font-serif font-bold text-foreground mb-6">Our Culture: Synergy, Not Silos</h2>
-          <p className="text-muted-foreground leading-relaxed text-lg mb-4">
+          <h2 className="text-3xl md:text-4xl font-serif font-bold text-white mb-6">Our Culture: Synergy, Not Silos</h2>
+          <p className="text-gold-light/70 leading-relaxed text-lg mb-4">
             At The Credence Group, we don't believe in isolated departments or rigid hierarchies. Our culture is built on collaboration across subsidiaries, open communication, and a shared commitment to excellence.
           </p>
-          <p className="text-muted-foreground leading-relaxed text-lg">
+          <p className="text-gold-light/70 leading-relaxed text-lg">
             Whether you're in real estate, finance, consulting, or media — you're part of one team with one vision.
           </p>
         </div>
@@ -72,10 +71,10 @@ const Careers = () => {
           </div>
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 max-w-4xl mx-auto">
             {opportunities.map((group) => (
-              <Card key={group.category} className="border-border">
+              <Card key={group.category} className="border-border hover:shadow-lg transition-shadow">
                 <CardContent className="p-6">
                   <div className="flex items-center gap-3 mb-4">
-                    <div className="h-10 w-10 rounded-lg bg-primary/10 flex items-center justify-center">
+                    <div className="h-10 w-10 rounded bg-primary/10 flex items-center justify-center">
                       <group.icon className="h-5 w-5 text-primary" />
                     </div>
                     <h3 className="font-serif font-bold text-foreground">{group.category}</h3>
@@ -100,7 +99,7 @@ const Careers = () => {
           <h2 className="text-2xl md:text-3xl font-serif font-bold text-primary-foreground mb-4">
             Don't See Your Role? Apply Anyway.
           </h2>
-          <p className="text-primary-foreground/80 mb-6 max-w-lg mx-auto">
+          <p className="text-primary-foreground/70 mb-6 max-w-lg mx-auto">
             We're always looking for talented professionals who share our values. Send your resume and tell us how you'd contribute to the Credence ecosystem.
           </p>
           <Button size="lg" variant="secondary" asChild>
