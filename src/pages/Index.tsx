@@ -31,7 +31,7 @@ const Index = () => {
           <Button size="lg" asChild>
             <Link to="/companies">Our Companies <ArrowRight className="ml-2 h-4 w-4" /></Link>
           </Button>
-          <Button size="lg" variant="outline" className="border-secondary-foreground/30 text-secondary-foreground hover:bg-secondary-foreground/10" asChild>
+          <Button size="lg" variant="outline" className="border-gold-light/30 text-white hover:bg-white/10" asChild>
             <Link to="/contact">Get in Touch</Link>
           </Button>
         </div>
@@ -48,28 +48,28 @@ const Index = () => {
       </section>
 
       {/* Portfolio */}
-      <section className="py-16 md:py-24 bg-muted">
+      <section className="py-16 md:py-24 bg-secondary">
         <div className="container mx-auto px-4">
           <div className="text-center mb-12">
-            <h2 className="text-3xl md:text-4xl font-serif font-bold text-foreground mb-3">Our Portfolio</h2>
-            <p className="text-muted-foreground max-w-xl mx-auto">Seven subsidiaries. One unified standard of excellence.</p>
+            <h2 className="text-3xl md:text-4xl font-serif font-bold text-white mb-3">Our Portfolio</h2>
+            <p className="text-gold-light/70 max-w-xl mx-auto">Seven subsidiaries. One unified standard of excellence.</p>
           </div>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
             {subsidiaries.map((s) => (
-              <Card key={s.name} className="group hover:shadow-lg transition-shadow border-border">
+              <Card key={s.name} className="group hover:shadow-xl transition-all bg-navy-light border-gold/10 hover:border-gold/30">
                 <CardContent className="p-6 flex flex-col h-full">
-                  <div className="h-12 w-12 rounded-lg bg-primary/10 flex items-center justify-center mb-4 group-hover:bg-primary/20 transition-colors">
+                  <div className="h-12 w-12 rounded bg-primary/15 flex items-center justify-center mb-4 group-hover:bg-primary/25 transition-colors">
                     <s.icon className="h-6 w-6 text-primary" />
                   </div>
-                  <h3 className="font-serif font-bold text-lg mb-1 text-foreground">{s.name}</h3>
+                  <h3 className="font-serif font-bold text-lg mb-1 text-white">{s.name}</h3>
                   <p className="text-xs font-medium text-primary mb-2">{s.focus}</p>
-                  <p className="text-sm text-muted-foreground leading-relaxed flex-1 mb-4">{s.mission}</p>
+                  <p className="text-sm text-gold-light/60 leading-relaxed flex-1 mb-4">{s.mission}</p>
                   {s.url !== "#" && (
                     <a
                       href={s.url}
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="inline-flex items-center gap-1.5 text-sm font-medium text-primary hover:underline"
+                      className="inline-flex items-center gap-1.5 text-sm font-medium text-primary hover:text-gold-light transition-colors"
                     >
                       Visit Website <ExternalLink className="h-3.5 w-3.5" />
                     </a>
@@ -79,7 +79,7 @@ const Index = () => {
             ))}
           </div>
           <div className="text-center mt-10">
-            <Button variant="outline" asChild>
+            <Button variant="outline" className="border-gold/30 text-gold-light hover:bg-gold/10 hover:text-white" asChild>
               <Link to="/companies">Explore All Companies <ArrowRight className="ml-2 h-4 w-4" /></Link>
             </Button>
           </div>
@@ -117,7 +117,7 @@ const Index = () => {
           <h2 className="text-2xl md:text-3xl font-serif font-bold text-primary-foreground mb-4">
             Integrity in Ownership. Excellence in Execution.
           </h2>
-          <p className="text-primary-foreground/80 mb-6 max-w-lg mx-auto">
+          <p className="text-primary-foreground/70 mb-6 max-w-lg mx-auto">
             Partner with The Credence Group for a future built on trust, innovation, and shared success.
           </p>
           <Button size="lg" variant="secondary" asChild>
