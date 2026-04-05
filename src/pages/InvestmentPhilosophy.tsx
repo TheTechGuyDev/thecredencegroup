@@ -44,13 +44,13 @@ const InvestmentPhilosophy = () => {
           </div>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-4xl mx-auto">
             {pillars.map((p) => (
-              <Card key={p.title} className="border-gold/10 bg-navy-light text-center hover:border-gold/25 transition-colors">
+              <Card key={p.title} className="border-white/10 bg-secondary/80 text-center hover:border-primary/25 transition-colors">
                 <CardContent className="p-6">
                   <div className="h-14 w-14 rounded-full bg-primary/15 flex items-center justify-center mx-auto mb-4">
                     <p.icon className="h-7 w-7 text-primary" />
                   </div>
                   <h3 className="font-serif font-bold text-lg mb-2 text-white">{p.title}</h3>
-                  <p className="text-sm text-gold-light/60 leading-relaxed">{p.desc}</p>
+                  <p className="text-sm text-white/70 leading-relaxed">{p.desc}</p>
                 </CardContent>
               </Card>
             ))}
@@ -89,13 +89,13 @@ const InvestmentPhilosophy = () => {
               { role: "Founder & CEO", desc: "Visionary leader driving the strategic direction and growth of The Credence Group ecosystem." },
               { role: "Chief Strategy Officer", desc: "Oversees cross-subsidiary strategy, operational synergy, and long-term planning." },
             ].map((leader) => (
-              <Card key={leader.role} className="border-gold/10 bg-navy-light hover:border-gold/25 transition-colors">
+              <Card key={leader.role} className="border-white/10 bg-secondary/80 hover:border-primary/25 transition-colors">
                 <CardContent className="p-6 text-center">
                   <div className="h-20 w-20 rounded-full bg-primary/15 flex items-center justify-center mx-auto mb-4">
                     <User className="h-10 w-10 text-primary" />
                   </div>
                   <h3 className="font-serif font-bold text-lg mb-1 text-white">{leader.role}</h3>
-                  <p className="text-sm text-gold-light/60 leading-relaxed">{leader.desc}</p>
+                  <p className="text-sm text-white/70 leading-relaxed">{leader.desc}</p>
                 </CardContent>
               </Card>
             ))}

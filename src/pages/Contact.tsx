@@ -64,8 +64,8 @@ const Contact = () => {
                 </div>
               </div>
 
-              <div className="rounded bg-secondary border border-gold/10 h-64 flex items-center justify-center">
-                <p className="text-gold-light/50 text-sm">Map Placeholder — Calgary, AB</p>
+              <div className="rounded bg-secondary border border-white/10 h-64 flex items-center justify-center">
+                <p className="text-white/60 text-sm">Map Placeholder — Calgary, AB</p>
               </div>
             </div>
           </div>
