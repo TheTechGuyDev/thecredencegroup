@@ -22,10 +22,10 @@ const Footer = () => {
               <div className="h-10 w-10 rounded bg-primary flex items-center justify-center text-secondary font-bold text-lg font-serif">C</div>
               <span className="text-lg font-bold font-serif text-white leading-tight">The Credence Group</span>
             </div>
-            <p className="text-sm text-gold-light/70 leading-relaxed italic mb-3">
+            <p className="text-sm text-white/70 leading-relaxed italic mb-3">
               Integrity in Ownership. Excellence in Execution.
             </p>
-            <p className="text-sm text-gold-light/50 leading-relaxed">
+            <p className="text-sm text-white/60 leading-relaxed">
               A diversified holding company with subsidiaries spanning real estate, finance, consulting, and media.
             </p>
           </div>
@@ -43,7 +43,7 @@ const Footer = () => {
                 { label: "FAQ", to: "/faq" },
               ].map((l) => (
                 <li key={l.to}>
-                  <Link to={l.to} className="text-gold-light/60 hover:text-primary transition-colors">{l.label}</Link>
+                  <Link to={l.to} className="text-white/70 hover:text-primary transition-colors">{l.label}</Link>
                 </li>
               ))}
             </ul>
@@ -52,7 +52,7 @@ const Footer = () => {
           {/* Our Companies */}
           <div>
             <h4 className="font-serif font-bold mb-4 text-primary">Our Companies</h4>
-            <ul className="space-y-2 text-sm text-gold-light/60">
+            <ul className="space-y-2 text-sm text-white/70">
               {subsidiaries.map((s) => (
                 <li key={s}>{s}</li>
               ))}
@@ -62,7 +62,7 @@ const Footer = () => {
           {/* Contact */}
           <div>
             <h4 className="font-serif font-bold mb-4 text-primary">Contact Us</h4>
-            <ul className="space-y-3 text-sm text-gold-light/60">
+            <ul className="space-y-3 text-sm text-white/70">
               <li className="flex items-start gap-2">
                 <Mail className="h-4 w-4 mt-0.5 text-primary" /> inquiries@credencegroup.com
               </li>
@@ -73,7 +73,7 @@ const Footer = () => {
           </div>
         </div>
 
-        <div className="border-t border-gold/10 mt-10 pt-6 text-center text-sm text-gold-light/30">
+        <div className="border-t border-white/10 mt-10 pt-6 text-center text-sm text-white/40">
           © {new Date().getFullYear()} The Credence Group. All rights reserved.
         </div>
       </div>

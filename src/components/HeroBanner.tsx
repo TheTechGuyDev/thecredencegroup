@@ -22,7 +22,7 @@ const HeroBanner = ({ title, subtitle, large = false, children, backgroundUrl }:
           {title}
         </h1>
         {subtitle && (
-          <p className={`${large ? "text-lg md:text-xl" : "text-base md:text-lg"} text-gold-light max-w-2xl mx-auto`}>
+          <p className={`${large ? "text-lg md:text-xl" : "text-base md:text-lg"} text-white/80 max-w-2xl mx-auto`}>
             {subtitle}
           </p>
         )}

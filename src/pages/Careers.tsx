@@ -53,10 +53,10 @@ const Careers = () => {
       <section className="py-16 md:py-24 bg-secondary">
         <div className="container mx-auto px-4 max-w-3xl text-center">
           <h2 className="text-3xl md:text-4xl font-serif font-bold text-white mb-6">Our Culture: Synergy, Not Silos</h2>
-          <p className="text-gold-light/70 leading-relaxed text-lg mb-4">
+          <p className="text-white/80 leading-relaxed text-lg mb-4">
             At The Credence Group, we don't believe in isolated departments or rigid hierarchies. Our culture is built on collaboration across subsidiaries, open communication, and a shared commitment to excellence.
           </p>
-          <p className="text-gold-light/70 leading-relaxed text-lg">
+          <p className="text-white/80 leading-relaxed text-lg">
             Whether you're in real estate, finance, consulting, or media — you're part of one team with one vision.
           </p>
         </div>

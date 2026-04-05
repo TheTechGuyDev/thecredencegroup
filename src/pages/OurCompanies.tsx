@@ -115,7 +115,7 @@ const OurCompanies = () => {
                   <item.icon className="h-7 w-7 text-primary" />
                 </div>
                 <h3 className="font-serif font-bold text-lg mb-2 text-white">{item.title}</h3>
-                <p className="text-sm text-gold-light/60 leading-relaxed">{item.desc}</p>
+                <p className="text-sm text-white/70 leading-relaxed">{item.desc}</p>
               </div>
             ))}
           </div>

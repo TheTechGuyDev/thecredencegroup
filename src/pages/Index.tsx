@@ -56,14 +56,14 @@ const Index = () => {
           </div>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
             {subsidiaries.map((s) => (
-              <Card key={s.name} className="group hover:shadow-xl transition-all bg-navy-light border-gold/10 hover:border-gold/30">
+              <Card key={s.name} className="group hover:shadow-xl transition-all bg-secondary/80 border-white/10 hover:border-primary/30">
                 <CardContent className="p-6 flex flex-col h-full">
                   <div className="h-12 w-12 rounded bg-primary/15 flex items-center justify-center mb-4 group-hover:bg-primary/25 transition-colors">
                     <s.icon className="h-6 w-6 text-primary" />
                   </div>
                   <h3 className="font-serif font-bold text-lg mb-1 text-white">{s.name}</h3>
                   <p className="text-xs font-medium text-primary mb-2">{s.focus}</p>
-                  <p className="text-sm text-gold-light/60 leading-relaxed flex-1 mb-4">{s.mission}</p>
+                  <p className="text-sm text-white/70 leading-relaxed flex-1 mb-4">{s.mission}</p>
                   {s.url !== "#" && (
                     <a
                       href={s.url}
@@ -79,7 +79,7 @@ const Index = () => {
             ))}
           </div>
           <div className="text-center mt-10">
-            <Button variant="outline" className="border-gold/30 text-gold-light hover:bg-gold/10 hover:text-white" asChild>
+            <Button variant="outline" className="border-white/30 text-white hover:bg-white/10" asChild>
               <Link to="/companies">Explore All Companies <ArrowRight className="ml-2 h-4 w-4" /></Link>
             </Button>
           </div>
