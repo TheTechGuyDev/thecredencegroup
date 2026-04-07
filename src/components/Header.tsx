@@ -1,12 +1,11 @@
 import { useState } from "react";
 import { Link, useLocation } from "react-router-dom";
-import { Mail, Menu, X } from "lucide-react";
+import { Menu, X } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
 const navLinks = [
-  { label: "Home", to: "/" },
-  { label: "Our Companies", to: "/companies" },
-  { label: "Investment Philosophy", to: "/philosophy" },
+  { label: "Portfolio", to: "/companies" },
+  { label: "Strategy", to: "/philosophy" },
   { label: "Careers", to: "/careers" },
   { label: "Contact", to: "/contact" },
   { label: "FAQ", to: "/faq" },
@@ -17,68 +16,62 @@ const Header = () => {
   const location = useLocation();
 
   return (
-    <header className="w-full">
-      {/* Top bar */}
-      <div className="bg-secondary">
-        <div className="container mx-auto flex items-center justify-between px-4 py-2 text-sm">
-          <a href="mailto:inquiries@credencegroup.com" className="flex items-center gap-1.5 text-white/80 hover:text-primary transition-colors">
-            <Mail className="h-3.5 w-3.5" /> inquiries@credencegroup.com
-          </a>
-          <span className="hidden sm:block text-white/50 text-xs tracking-widest uppercase">Calgary, AB</span>
-        </div>
-      </div>
+    <header className="absolute top-0 left-0 right-0 z-50 bg-transparent">
+      <nav className="container mx-auto flex items-center justify-between px-4 md:px-8 py-5">
+        <Link to="/" className="flex items-center gap-2.5">
+          <span className="text-lg font-bold font-serif italic text-foreground">The Credence Group</span>
+        </Link>
 
-      {/* Main nav */}
-      <nav className="bg-secondary border-b border-white/10 shadow-lg">
-        <div className="container mx-auto flex items-center justify-between px-4 py-4">
-          <Link to="/" className="flex items-center gap-3">
-            <div className="h-10 w-10 rounded bg-primary flex items-center justify-center text-secondary font-bold text-lg font-serif">C</div>
-            <span className="text-lg font-bold font-serif text-white leading-tight">The Credence Group</span>
-          </Link>
-
-          {/* Desktop nav */}
-          <div className="hidden lg:flex items-center gap-1">
-            {navLinks.map((link) => (
-              <Link
-                key={link.to}
-                to={link.to}
-                className={`px-4 py-2 rounded text-sm font-medium transition-colors ${
-                  location.pathname === link.to
-                    ? "text-primary"
-                    : "text-white/80 hover:text-primary"
-                }`}
-              >
-                {link.label}
-              </Link>
-            ))}
-          </div>
-
-          {/* Mobile toggle */}
-          <Button variant="ghost" size="icon" className="lg:hidden text-white hover:text-primary" onClick={() => setMobileOpen(!mobileOpen)}>
-            {mobileOpen ? <X className="h-5 w-5" /> : <Menu className="h-5 w-5" />}
+        {/* Desktop nav */}
+        <div className="hidden lg:flex items-center gap-1">
+          {navLinks.map((link) => (
+            <Link
+              key={link.to}
+              to={link.to}
+              className={`px-4 py-2 text-sm font-medium transition-colors ${
+                location.pathname === link.to
+                  ? "text-primary"
+                  : "text-foreground/70 hover:text-foreground"
+              }`}
+            >
+              {link.label}
+            </Link>
+          ))}
+          <Button size="sm" className="ml-4 rounded-sm px-5" asChild>
+            <Link to="/contact">Partner With Us</Link>
           </Button>
         </div>
 
-        {/* Mobile menu */}
-        {mobileOpen && (
-          <div className="lg:hidden border-t border-white/10 bg-secondary px-4 pb-4">
-            {navLinks.map((link) => (
-              <Link
-                key={link.to}
-                to={link.to}
-                onClick={() => setMobileOpen(false)}
-                className={`block px-4 py-3 rounded text-sm font-medium transition-colors ${
-                  location.pathname === link.to
-                    ? "text-primary"
-                    : "text-white/80 hover:text-primary"
-                }`}
-              >
-                {link.label}
-              </Link>
-            ))}
-          </div>
-        )}
+        {/* Mobile toggle */}
+        <Button variant="ghost" size="icon" className="lg:hidden text-foreground" onClick={() => setMobileOpen(!mobileOpen)}>
+          {mobileOpen ? <X className="h-5 w-5" /> : <Menu className="h-5 w-5" />}
+        </Button>
       </nav>
+
+      {/* Mobile menu */}
+      {mobileOpen && (
+        <div className="lg:hidden bg-white border-t border-border px-4 pb-4 shadow-lg">
+          {navLinks.map((link) => (
+            <Link
+              key={link.to}
+              to={link.to}
+              onClick={() => setMobileOpen(false)}
+              className={`block px-4 py-3 text-sm font-medium transition-colors ${
+                location.pathname === link.to
+                  ? "text-primary"
+                  : "text-foreground/70 hover:text-foreground"
+              }`}
+            >
+              {link.label}
+            </Link>
+          ))}
+          <div className="px-4 pt-2">
+            <Button size="sm" className="w-full rounded-sm" asChild>
+              <Link to="/contact" onClick={() => setMobileOpen(false)}>Partner With Us</Link>
+            </Button>
+          </div>
+        </div>
+      )}
     </header>
   );
 };
