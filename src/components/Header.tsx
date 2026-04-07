@@ -17,7 +17,7 @@ const Header = () => {
   const location = useLocation();
 
   return (
-    <header className="fixed top-0 left-0 right-0 z-50 <header className="fixed top-0 left-0 right-0 z-50 bg-background/95 backdrop-blur-sm shadow-sm">">
+    <header className="fixed top-0 left-0 right-0 z-50 bg-background/95 backdrop-blur-sm shadow-sm">
       <nav className="container mx-auto flex items-center justify-between px-4 md:px-8 py-5">
         <Link to="/" className="flex items-center gap-2.5">
           <span className="text-lg font-bold font-serif italic text-foreground">The Credence Group</span>
