@@ -21,7 +21,7 @@ const Index = () => {
   return (
     <Layout>
       {/* Hero — left-aligned, editorial style */}
-      <section className="relative min-h-[70vh] flex items-end pb-16 md:pb-20">
+      <section className="relative min-h-[85vh] flex items-end pb-16 md:pb-20 pt-28 md:pt-32">
         <div
           className="absolute inset-0 bg-cover bg-center"
           style={{ backgroundImage: `url(${heroBg})` }}
