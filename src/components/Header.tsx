@@ -5,11 +5,10 @@ import { Button } from "@/components/ui/button";
 
 const navLinks = [
   { label: "Home", to: "/" },
-  { label: "Portfolio", to: "/companies" },
-  { label: "Strategy", to: "/philosophy" },
+  { label: "Our Companies", to: "/companies" },
+  { label: "Investment Philosophy", to: "/philosophy" },
   { label: "Careers", to: "/careers" },
   { label: "Contact", to: "/contact" },
-  { label: "FAQ", to: "/faq" },
 ];
 
 const Header = () => {
