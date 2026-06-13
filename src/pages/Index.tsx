@@ -8,13 +8,13 @@ import {
 import heroBg from "@/assets/hero-bg.jpg";
 
 const subsidiaries = [
-  { name: "Real Estate", fullName: "Credence Real Estate", focus: "Property Acquisition", mission: "Strategic acquisition and management of high-value real estate assets.", icon: Home, url: "#", featured: false },
-  { name: "Realty", fullName: "Credence Realty", focus: "Real Estate Services", mission: "Premier residential brokerage services.", icon: Building2, url: "#", featured: false },
-  { name: "Design Build", fullName: "Credence Design Build", focus: "Land Development, Design & Construction", mission: "Architectural excellence meets precision engineering.", icon: Landmark, url: "https://credencedesignbuild.ca", featured: true },
-  { name: "Mortgages", fullName: "Credence Mortgages", focus: "Mortgage Financing & Private Lending", mission: "Bespoke financial solutions for home ownership.", icon: DollarSign, url: "#", featured: false },
-  { name: "Capital", fullName: "Credence Capital", focus: "Private Equity", mission: "Private equity and strategic venture investment.", icon: TrendingUp, url: "#", featured: false },
-  { name: "Consulting", fullName: "Credence Consulting", focus: "Business Advisory & Strategy", mission: "Executive advisory for the modern age.", icon: Briefcase, url: "#", featured: false },
-  { name: "Media", fullName: "Credence Media", focus: "Marketing & Content", mission: "Digital storytelling and brand legacy creation.", icon: Film, url: "https://credencemedia.ca", featured: false },
+  { name: "Real Estate", fullName: "Credence Real Estate", focus: "Asset Acquisition", mission: "Identifying and securing high-yield residential and commercial opportunities through rigorous market analysis.", icon: Home, url: "#", featured: false },
+  { name: "Realty", fullName: "Credence Realty", focus: "Real Estate Services", mission: "Delivering real estate representation and advisory for clients.", icon: Building2, url: "#", featured: false },
+  { name: "Design Build", fullName: "Credence Design Build", focus: "Land Development & Design/Construction", mission: "Leading land development, infill development, and construction-led design and execution.", icon: Landmark, url: "https://credencedesignbuild.ca", featured: true },
+  { name: "Mortgages", fullName: "Credence Mortgages", focus: "Mortgage Financing & Private Lending", mission: "Structuring bespoke mortgage financing and private lending solutions to facilitate complex acquisitions.", icon: DollarSign, url: "#", featured: false },
+  { name: "Capital", fullName: "Credence Capital", focus: "Private Equity", mission: "Deploying strategic capital and disciplined asset management to drive long-term equity growth.", icon: TrendingUp, url: "#", featured: false },
+  { name: "Consulting", fullName: "Credence Consulting", focus: "Advisory & Strategy", mission: "Driving organizational excellence through specialized business advisory and transformation strategies.", icon: Briefcase, url: "#", featured: false },
+  { name: "Media", fullName: "Credence Media", focus: "Marketing & Content", mission: "Crafting high-impact narratives and digital positioning to amplify market presence and influence.", icon: Film, url: "https://credencemedia.ca", featured: false },
 ];
 
 const Index = () => {
