@@ -8,13 +8,13 @@ import {
 import heroBg from "@/assets/hero-bg.jpg";
 
 const subsidiaries = [
-  { name: "Real Estate", fullName: "Credence Real Estate", focus: "Property Acquisition", mission: "Strategic acquisition and management of high-value real estate assets.", icon: Home, url: "#", featured: false },
-  { name: "Realty", fullName: "Credence Realty", focus: "Real Estate Services", mission: "Premier residential brokerage services.", icon: Building2, url: "#", featured: false },
-  { name: "Design Build", fullName: "Credence Design Build", focus: "Land Development, Design & Construction", mission: "Architectural excellence meets precision engineering.", icon: Landmark, url: "https://credencedesignbuild.ca", featured: true },
-  { name: "Mortgages", fullName: "Credence Mortgages", focus: "Mortgage Financing & Private Lending", mission: "Bespoke financial solutions for home ownership.", icon: DollarSign, url: "#", featured: false },
-  { name: "Capital", fullName: "Credence Capital", focus: "Private Equity", mission: "Private equity and strategic venture investment.", icon: TrendingUp, url: "#", featured: false },
-  { name: "Consulting", fullName: "Credence Consulting", focus: "Business Advisory & Strategy", mission: "Executive advisory for the modern age.", icon: Briefcase, url: "#", featured: false },
-  { name: "Media", fullName: "Credence Media", focus: "Marketing & Content", mission: "Digital storytelling and brand legacy creation.", icon: Film, url: "https://credencemedia.ca", featured: false },
+  { name: "Real Estate", fullName: "Credence Real Estate", focus: "Asset Acquisition", mission: "Identifying and securing high-yield residential and commercial opportunities through rigorous market analysis.", icon: Home, url: "#", featured: false },
+  { name: "Realty", fullName: "Credence Realty", focus: "Real Estate Services", mission: "Delivering real estate representation and advisory for clients.", icon: Building2, url: "#", featured: false },
+  { name: "Design Build", fullName: "Credence Design Build", focus: "Land Development & Design/Construction", mission: "Leading land development, infill development, and construction-led design and execution.", icon: Landmark, url: "https://credencedesignbuild.ca", featured: true },
+  { name: "Mortgages", fullName: "Credence Mortgages", focus: "Mortgage Financing & Private Lending", mission: "Structuring bespoke mortgage financing and private lending solutions to facilitate complex acquisitions.", icon: DollarSign, url: "#", featured: false },
+  { name: "Capital", fullName: "Credence Capital", focus: "Private Equity", mission: "Deploying strategic capital and disciplined asset management to drive long-term equity growth.", icon: TrendingUp, url: "#", featured: false },
+  { name: "Consulting", fullName: "Credence Consulting", focus: "Advisory & Strategy", mission: "Driving organizational excellence through specialized business advisory and transformation strategies.", icon: Briefcase, url: "#", featured: false },
+  { name: "Media", fullName: "Credence Media", focus: "Marketing & Content", mission: "Crafting high-impact narratives and digital positioning to amplify market presence and influence.", icon: Film, url: "https://credencemedia.ca", featured: false },
 ];
 
 const Index = () => {
@@ -39,7 +39,7 @@ const Index = () => {
               Unified Vision.
             </h1>
             <p className="text-muted-foreground text-base md:text-lg max-w-lg mb-8 leading-relaxed">
-              The Credence Group stewards a multi-sector portfolio dedicated to integrity, innovation, and long-term value creation across global markets.
+              The Credence Group is a holding company managing a strategic portfolio of industry players across real estate, private lending, business acquisition, advisory and consulting services.
             </p>
             <div className="flex flex-wrap gap-3">
               <Button size="lg" className="rounded-sm px-6" asChild>
@@ -65,10 +65,10 @@ const Index = () => {
             </div>
             <div className="space-y-5">
               <p className="text-muted-foreground leading-relaxed">
-                As a premier holding group, our structure is designed for resilience and agility. We provide the strategic capital and operational expertise that allow our subsidiaries to lead their respective industries.
+                At The Credence Group, we don't just hold assets; we cultivate growth. As a parent organization, we provide the strategic oversight, capital, and shared values that allow our subsidiaries to operate in their respective markets.
               </p>
               <p className="text-muted-foreground leading-relaxed">
-                By integrating diverse sectors — from real estate to media — we create a synergistic ecosystem where knowledge and excellence flow freely, ensuring every venture meets the "Credence Standard."
+                From real estate development to the complexities of construction and business acquisition, our ecosystem is designed to deliver seamless excellence.
               </p>
             </div>
           </div>
@@ -138,9 +138,9 @@ const Index = () => {
           </div>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
             {[
-              { icon: Shield, title: "The Credence Standard", desc: "Our rigorous internal benchmarks ensure that every project under our umbrella adheres to global standards of quality and ethical governance." },
-              { icon: Layers, title: "Vertical Integration", desc: "By owning the supply chain from design to capital to execution, we minimize friction and maximize efficiency for our partners." },
-              { icon: Zap, title: "Cross-Sector Synergy", desc: "Insights from our Media division inform our Realty strategies, while our Capital arm fuels our Design Build innovations." },
+              { icon: Shield, title: "The Credence Standard", desc: "Each company is connected by a shared commitment to integrity, precision, and client-first results — the standard that defines every interaction across the group." },
+              { icon: Layers, title: "Vertical Integration", desc: "We control the full lifecycle of an asset — from acquisition through design, construction, sale, and financing — eliminating friction and maximizing value." },
+              { icon: Zap, title: "Synergy in Motion", desc: "By leveraging the internal strengths of our media, consulting, and capital arms, our real estate and construction projects move faster and perform better." },
             ].map((item) => (
               <div key={item.title} className="border border-border rounded-sm p-8">
                 <div className="h-10 w-10 mb-5 text-primary">
@@ -170,7 +170,7 @@ const Index = () => {
               <Link to="/contact">Get in Touch</Link>
             </Button>
             <Button size="lg" variant="outline" className="rounded-sm px-8 border-white/30 text-white hover:bg-white/10" asChild>
-              <Link to="/philosophy">Annual Reports</Link>
+              <Link to="/philosophy">Investment Philosophy</Link>
             </Button>
           </div>
         </div>
