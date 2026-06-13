@@ -138,9 +138,9 @@ const Index = () => {
           </div>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
             {[
-              { icon: Shield, title: "The Credence Standard", desc: "Our rigorous internal benchmarks ensure that every project under our umbrella adheres to global standards of quality and ethical governance." },
-              { icon: Layers, title: "Vertical Integration", desc: "By owning the supply chain from design to capital to execution, we minimize friction and maximize efficiency for our partners." },
-              { icon: Zap, title: "Cross-Sector Synergy", desc: "Insights from our Media division inform our Realty strategies, while our Capital arm fuels our Design Build innovations." },
+              { icon: Shield, title: "The Credence Standard", desc: "Each company is connected by a shared commitment to integrity, precision, and client-first results — the standard that defines every interaction across the group." },
+              { icon: Layers, title: "Vertical Integration", desc: "We control the full lifecycle of an asset — from acquisition through design, construction, sale, and financing — eliminating friction and maximizing value." },
+              { icon: Zap, title: "Synergy in Motion", desc: "By leveraging the internal strengths of our media, consulting, and capital arms, our real estate and construction projects move faster and perform better." },
             ].map((item) => (
               <div key={item.title} className="border border-border rounded-sm p-8">
                 <div className="h-10 w-10 mb-5 text-primary">
