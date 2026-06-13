@@ -1,10 +1,12 @@
 import { Link } from "react-router-dom";
-import { Mail, MapPin } from "lucide-react";
+import { Mail, MapPin, ArrowRight } from "lucide-react";
+import { Button } from "@/components/ui/button";
 
 const quickLinks = [
   { label: "Home", to: "/" },
   { label: "Our Companies", to: "/companies" },
   { label: "Investment Philosophy", to: "/philosophy" },
+  { label: "Leadership", to: "/leadership" },
   { label: "Careers", to: "/careers" },
   { label: "Contact", to: "/contact" },
 ];
@@ -22,6 +24,20 @@ const companies = [
 const Footer = () => {
   return (
     <footer className="bg-foreground text-white/80">
+      {/* CTA band */}
+      <div className="border-b border-white/10">
+        <div className="container mx-auto px-4 md:px-8 py-10 flex flex-col md:flex-row items-center justify-between gap-5 text-center md:text-left">
+          <div>
+            <h3 className="font-serif font-bold text-white text-xl md:text-2xl">Ready to partner with The Credence Group?</h3>
+            <p className="text-sm text-white/60 mt-1">Speak with our team about opportunities across the ecosystem.</p>
+          </div>
+          <Button asChild size="lg" className="rounded-sm px-6">
+            <Link to="/contact">
+              Contact Us <ArrowRight className="ml-2 h-4 w-4" />
+            </Link>
+          </Button>
+        </div>
+      </div>
       <div className="container mx-auto px-4 md:px-8 py-14">
         <div className="grid grid-cols-1 md:grid-cols-4 gap-10 mb-10">
           {/* Brand */}
