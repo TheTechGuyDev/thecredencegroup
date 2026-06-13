@@ -65,10 +65,10 @@ const Index = () => {
             </div>
             <div className="space-y-5">
               <p className="text-muted-foreground leading-relaxed">
-                As a premier holding group, our structure is designed for resilience and agility. We provide the strategic capital and operational expertise that allow our subsidiaries to lead their respective industries.
+                At The Credence Group, we don't just hold assets; we cultivate growth. As a parent organization, we provide the strategic oversight, capital, and shared values that allow our subsidiaries to operate in their respective markets.
               </p>
               <p className="text-muted-foreground leading-relaxed">
-                By integrating diverse sectors — from real estate to media — we create a synergistic ecosystem where knowledge and excellence flow freely, ensuring every venture meets the "Credence Standard."
+                From real estate development to the complexities of construction and business acquisition, our ecosystem is designed to deliver seamless excellence.
               </p>
             </div>
           </div>
