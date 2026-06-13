@@ -39,7 +39,7 @@ const Index = () => {
               Unified Vision.
             </h1>
             <p className="text-muted-foreground text-base md:text-lg max-w-lg mb-8 leading-relaxed">
-              The Credence Group stewards a multi-sector portfolio dedicated to integrity, innovation, and long-term value creation across global markets.
+              The Credence Group is a holding company managing a strategic portfolio of industry players across real estate, private lending, business acquisition, advisory and consulting services.
             </p>
             <div className="flex flex-wrap gap-3">
               <Button size="lg" className="rounded-sm px-6" asChild>
